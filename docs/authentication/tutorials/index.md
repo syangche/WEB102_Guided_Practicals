@@ -31,8 +31,8 @@ The source code for the tutorial can be found on [GitHub].
 To get started, clone the repository and install the dependencies:
 
 ```sh
-git clone https://github.com/rubcstswe/web102-hono-auth-jwt-prisma.git
-cd web102-hono-auth-jwt-prisma
+git clone https://github.com/rubcstswe/web102-hono-auth-jwt-prisma-forked.git
+cd web102-hono-auth-jwt-prisma-forked
 bun install
 ```
 
@@ -568,10 +568,3 @@ app.get("/protected/account/balance", async (c) => {
 4. If the JWT token is not valid, the server throws an HTTPException with a status code of 401 and a message "Unauthorized".
 5. The user is fetched from the database using the user id from the JWT token.
 6. The user's account balance is returned in the JSON response.
-
-
-## Next steps
-
-In the next tutorial, we will explore how to implement sending an email verification token to the user upon registration. The user will need to verify their email address before they can log in and access the protected endpoints.
-
-Addtionally, we will be exploring on refresh tokens and how to implement them in the authentication flow as well as functionality of forgetting and resetting passwords.
